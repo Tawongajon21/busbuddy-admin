@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .ticket-card{
+            display: grid;
+            width: 600px;
+            height: 150px;
+            padding-left: 3rem;
+            margin-top: 1rem;
+
+        }
+        .ticket-header{
+            background-color: #ff8000;
+            height: 40px;
+            border-top-right-radius:10px ;
+            border-top-left-radius:10px ;
+            color: white;
+            padding-left: 2.7rem;
+            display: grid;
+            align-items: center;
+            align-content: center;
+
+        }
+        .div-ul{
+            display: flex;
+            margin-left: 0;
+            margin-top: -1rem;
+          
+        }
+        .div-ul ul{
+            list-style: none;
+            margin-left: 0;
+        }
+        .div-ul ul li:first-child{
+            color: #ff8000;
+        }
+    
+        .feint-text{
+            font-weight: 200;
+        }
+        main{
+            display: grid;
+        }
+        .black-bg{
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+        }
+        .main-header{
+            padding-left:2.3rem;
+            color: #ff8000;
+        }
+        .div-name{
+           display: grid;
+           justify-content: right;
+           margin-top: -10rem;
+           margin-right: 3rem;
+        }
+        .seat-number{
+            font-size: 2rem;
+        }
+        main{
+            margin-top: -1rem;
+        }
+        #black-bg-1{
+            margin-top: -1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="ticket-card">
+        <header class="ticket-header">
+            <h3>Eagle Liner</h3>
+        </header>
+        <div class="div-ul">
+<ul>
+    <li><h2>DEPARTURE</h2></li>
+    <li><h3 class="feint-text">0800AM</h3></li>
+<li>12 December 2024</li>
+</ul>
+<ul>
+    <li><h2>SEAT</h2></li>
+    <li><h3 class="feint-text">A01</h3></li>
+<li>Seat Number :20 </li>
+</ul>
+<ul>
+    <li><h2>DROP OFF AREA</h2></li>
+    <li><h3 class="feint-text">MUTARE</h3></li>
+
+</ul>
+        </div>
+        <main>
+            <header class="main-header">
+                <h2>DETAILS</h2>
+            </header>
+            <ul id="black-bg-1" class="black-bg">
+                <li>FROM : HARARE</li>
+                <li>TO : GWERU</li>
+            </ul>
+            <ul class="black-bg">
+                <li>TRACKING ID : </li>
+                <li>Q209837637890987</li>
+            </ul>
+        </main>
+        <div class="div-name">
+            <p class="h3">
+                <h3>Reginald Jongwe</h3>
+                <h1 class="seat-number">24</h1>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

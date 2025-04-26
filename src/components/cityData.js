@@ -1,0 +1,159 @@
+export const tempCityData=
+{
+ "Harare Beitbridge"   : [
+    {
+        from:"Harare",
+        to:"Beatrice",
+        busfare:""
+    },
+    {
+        from:"Beatrice",
+        to:"Chivhu",
+        busfare:""
+    },
+    {
+        from:"Chivhu",
+        to:"Featherstone",
+        busfare:""
+    },
+    {
+        from:"Featherstone",
+        to:"Mvuma",
+        busfare:""
+    },
+    {
+        from:"Mvuma",
+        to:"Masvingo",
+        busfare:""
+    },
+    {
+        from:"Masvingo",
+        to:"Beitbridge",
+        busfare:""
+    },
+],
+ "Harare Masvingo"   :
+[
+    {
+        from:"Harare",
+        to:"Beatrice",
+        busfare:""
+    },
+    {
+        from:"Beatrice",
+        to:"Chivhu",
+        busfare:""
+    },
+    {
+        from:"Chivhu",
+        to:"Featherstone",
+        busfare:""
+    },
+    {
+        from:"Featherstone",
+        to:"Mvuma",
+        busfare:""
+    },
+    {
+        from:"Mvuma",
+        to:"Masvingo",
+        busfare:""
+    }
+],
+ "Harare Bulawayo"   :
+[
+    {
+        from:"Harare",
+        to:"Norton",
+        busfare:""
+    },
+    {
+        from:"Harare",
+        to:"Bulawayo",
+        busfare:""
+    },
+    {
+        from:"Norton",
+        to:"Bulawayo",
+        busfare:""
+    },
+    {
+        from:"Chegutu",
+        to:"Bulawayo",
+        busfare:""
+    },
+    {
+        from:"Kadoma",
+        to:"Bulawayo",
+        busfare:""
+    },
+    {
+        from:"Kwekwe",
+        to:"Bulawayo",
+        busfare:""
+    },
+  
+    {
+        from:"Norton",
+        to:"Chegutu",
+        busfare:""
+    },
+    {
+        from:"Chegutu",
+        to:"Kadoma",
+        busfare:""
+    },
+    {
+        from:"Kadoma",
+        to:"Kwekwe",
+        busfare:""
+    },
+    {
+        from:"Kwekwe",
+        to:"Gweru",
+        busfare:""
+    },
+    {
+        from:"Gweru",
+        to:"Bulawayo",
+        busfare:""
+    }
+
+],
+ "Harare Mutare"   :
+[
+    {
+        from:"Harare",
+        to:"Ruwa",
+        busfare:""
+    },
+    {
+        from:"Ruwa",
+        to:"Marondera",
+        busfare:""
+    },
+    {
+        from:"Marondera",
+        to:"Macheke",
+        busfare:""
+    },
+    {
+        from:"Headlands",
+        to:"Rusape",
+        busfare:""
+    },
+    {
+        from:"Rusape",
+        to:"Nyazura",
+        busfare:""
+    },
+    {
+        from:"Nyazura",
+        to:"Mutare",
+        busfare:""
+    }
+
+],
+
+
+}

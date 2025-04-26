@@ -1,0 +1,1 @@
+export const baseUrlFrontend='http://localhost:3005';
