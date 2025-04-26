@@ -12,6 +12,7 @@ import FormLoading from './FormLoading'
 import { createtrip } from '../redux/actions/trips'
 import { tempCityData } from './cityData'
 import { debounce } from 'lodash'
+import {baseUrlFrontend} from "../frontend-url"
 
 function AddTrip({data:userInfo}) {
     const [inputValue, setInputValue] = useState("")
@@ -216,7 +217,7 @@ console.log(company);
 useEffect(() => {
 if (addTrip.data) {
     setTimeout(()=>{
-        window.location.replace(`http://localhost:3005/trips`)
+        window.location.replace(`${baseUrlFrontend}/trips`)
      // navigate("/bookings")
        
       

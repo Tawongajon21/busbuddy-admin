@@ -11,11 +11,14 @@ import styles from "./styles.css"
 import { createtrip,updatetrip,gettrip } from '../redux/actions/trips'
 import {useParams} from 'react-router-dom'
 import { getData } from './helper'
+import { baseUrlFrontend } from "../frontend-url";
 function UpdateTrip() {
     const id= useParams().id
     const dispatch=useDispatch()
     const getTrip=useSelector((state)=>state.getTrip)
-let objectData=getTrip.loading ? "Loading" : getTrip.error ? "error" : getTrip.data ? getTrip.data : null  
+let objectData=getTrip.loading ? "Loading" : getTrip.error ? "error" : getTrip.data ? getTrip.data : null  ;
+
+
 
 useEffect(() => {
  dispatch(gettrip(id))
@@ -211,7 +214,7 @@ function submit() {
 useEffect(() => {
 if (addTrip.data) {
     setTimeout(()=>{
-        window.location.replace(`http://localhost:3005/trips`)
+        window.location.replace(baseUrlFrontend)
      // navigate("/bookings")
        
       

@@ -12,6 +12,7 @@ function Navbar({data}) {
     let userLogin=useSelector((state)=>state.userLogin)
     let notifications=useSelector((state)=>state.notifications)
     let readNotifications= notifications.notifications.filter((item)=>item.read===false).length;
+    let serverUrl='https://busbuddy-server.onrender.com'
     const [socket, setsocket] = useState(null)
     let {userInfo}=userLogin;
     const dispatch=useDispatch();
@@ -22,7 +23,7 @@ function Navbar({data}) {
      
 useEffect(() => {
 
-    const socketIo=io('http://localhost:4000'); 
+    const socketIo=io(serverUrl); 
 setsocket(socketIo)
  socketIo.on('connect',(e)=>{
 

@@ -15,6 +15,7 @@ function Buses() {
   const [showToolTip, setshowToolTip] = useState(false)
   const buses=useSelector((state)=>state.getBuses);
 const {loading,error,data}=buses
+let serverUrl='https://busbuddy-server.onrender.com'
 useEffect(() => {
 
   dispatch(getbuses())
@@ -37,7 +38,7 @@ useEffect(() => {
       <div className='card'>
       {
 item.images.map((item,index)=>(
-<ImageLoader key={index} className={"bus-image"}  imageData={item.images} item={item} thumbnail={`http://localhost:4000${item.thumbnail}`} original={`http://localhost:4000${item.newPath}`} />
+<ImageLoader key={index} className={"bus-image"}  imageData={item.images} item={item} thumbnail={`${serverUrl}${item.thumbnail}`} original={`${serverUrl}${item.newPath}`} />
 ))
       }
     

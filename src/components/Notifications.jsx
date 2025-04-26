@@ -13,6 +13,7 @@ import  io  from 'socket.io-client'
 import store from '../redux/store'
 function Notifications() {
   let notifications=useSelector((state)=>state.notifications)
+  let serverUrl='https://busbuddy-server.onrender.com'
   console.log(notifications);
 
   let data=notifications.notifications.sort((a,b)=>{
@@ -33,7 +34,7 @@ function Notifications() {
 
   useEffect(() => {
 
-    const socketIo=io('http://localhost:4000'); 
+    const socketIo=io(serverUrl); 
     setsocket(socketIo)
   
     

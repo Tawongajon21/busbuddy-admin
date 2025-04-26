@@ -1,0 +1,1 @@
+export const serverUrl='https://busbuddy-server.onrender.com/api/v1/'; 

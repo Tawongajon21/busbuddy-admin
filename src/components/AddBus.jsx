@@ -7,7 +7,7 @@ import debounce from "lodash.debounce"
 import { useDispatch,useSelector } from 'react-redux'
 import { getbuses,addbus } from '../redux/actions/bus-actions'
 import FormLoading from './FormLoading'
-
+import {baseUrlFrontend} from "../frontend-url"
 import { createtrip } from '../redux/actions/trips'
 
 function AddBus() {
@@ -76,7 +76,7 @@ function submit() {
 useEffect(() => {
 if (addBus.data) {
     setTimeout(()=>{
-        window.location.replace(`http://localhost:3005/buses`)
+        window.location.replace(`${baseUrlFrontend}/buses`)
      // navigate("/bookings")
        
       

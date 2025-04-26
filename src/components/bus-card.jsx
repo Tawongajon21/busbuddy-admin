@@ -8,7 +8,7 @@ import ImageLoader from './ImageLoader';
 import {MdMoreVert} from "react-icons/md"
 
 function BusCard({_id,image,busName,to,from,busfare,bus,item,signature}) {
-
+let serverUrl='https://busbuddy-server.onrender.com'
   const dispatch=useDispatch()
 const [showToolTip, setshowToolTip] = useState(false)
 const deleteTrip=useSelector((state)=>state.deleteTrip);
@@ -27,7 +27,7 @@ console.log(deleteTrip);
     <div className='card'>
       {
 newImageArray?.map((item,index)=>(
-<ImageLoader key={index} className={"bus-image"}  imageData={newImageArray} item={item} thumbnail={`http://localhost:4000${item.thumbnail}`} original={`http://localhost:4000${item.newPath}`} />
+<ImageLoader key={index} className={"bus-image"}  imageData={newImageArray} item={item} thumbnail={`${serverUrl}/${item.thumbnail}`} original={`${serverUrl}${item.newPath}`} />
 ))
       }
     

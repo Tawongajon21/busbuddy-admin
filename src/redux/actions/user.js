@@ -4,6 +4,7 @@ import Cookie from 'js-cookie';
 import { Axios } from "axios";
 import axios from "axios";
 import { baseUrl } from "./baseUrl";
+import { baseUrlFrontend } from "../../frontend-url";
 export const  usersignin = (email, password) => async (dispatch) => {
     dispatch({ type: USER_LOGIN_REQUEST, payload: { email, password } });
     try {
@@ -48,22 +49,22 @@ if (role==="user") {
 }else if(role==="companyOwner"){
   localStorage.removeItem("companyOwnerInfo")
   dispatch({ type:COMPANY_OWNER_LOGOUT_SUCCESS})
-  window.location.assign('http://localhost:3005/')
+  window.location.assign(`${baseUrlFrontend}`)
 }
 else if(role==="driver"){
   localStorage.removeItem("driverInfo")
   dispatch({ type:DRIVER_LOGOUT_SUCCESS})
-  window.location.assign('http://localhost:3005/')
+  window.location.assign(`${baseUrlFrontend}`)
 }
 else if(role==="Admin"){
   localStorage.removeItem("adminInfo")
   dispatch({ type:ADMIN_LOGOUT_SUCCESS})
-  window.location.assign('http://localhost:3005/')
+  window.location.assign(`${baseUrlFrontend}`)
   
 }else{
   localStorage.removeItem("conductorInfo")
   dispatch({ type:CONDUCTOR_LOGOUT_SUCCESS})
-  window.location.assign('http://localhost:3005/')
+  window.location.assign(`${baseUrlFrontend}`)
 }
 
     
