@@ -148,7 +148,6 @@ let counter=0
 let signature=userInfo.signature
 let company=userInfo.company
 console.log(userInfo);
-
 const dispatch=useDispatch()
 
 const buses=useSelector((state)=>state.getBuses)
@@ -157,7 +156,8 @@ const drivers=useSelector((state)=>state.getDrivers)
 const addTrip=useSelector((state)=>state.addTrip)
 let {loading,error,data}=buses
 
-
+let role= userInfo.role;
+console.log(role);
 const getRoute=debounce(()=>{
     let key=`${from} ${to}`;
 
