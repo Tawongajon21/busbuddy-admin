@@ -85,7 +85,7 @@ currentUser === null ? null : undefined ? null :  currentUser?.length   > 0 ?   
         <img src={imageSix} className='image-selection-option' alt="image-selection-option" />
        </div>
     </Link>
-    <Link to='/bookings' className='selection-option'>
+    <Link to='/conductors' className='selection-option'>
        <main className="selection-text">
         <h3>
       Conductors
@@ -95,7 +95,7 @@ currentUser === null ? null : undefined ? null :  currentUser?.length   > 0 ?   
         <img src={imageSeven} className='image-selection-option' alt="image-selection-option" />
        </div>
     </Link>
-    <Link to='/bookings' className='selection-option'>
+    <Link to='/trips' className='selection-option'>
        <main className="selection-text">
         <h3>
      Trips
